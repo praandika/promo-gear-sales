@@ -22,6 +22,12 @@ img{
     font-weight: bold;
 }
 
+.angsuran h1{
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: -10px;
+}
+
 .promo{
     font-weight: bold;
 }
@@ -41,25 +47,61 @@ h3{
 }
 
 a i{
-    font-size: 50px;
+    font-size: 20px;
 }
 
-.pulse:hover{
+.promo-container{
+    padding: 0px 25px 0px 25px;
+}
+
+.promo{
+    background-color: #1F4690;
+    color: #ffffff;
+    width: 60%;
+    padding: 10px 0px 10px 0px;
+    border-radius: 20px;
+}
+
+.btn-promo{
+    background-color: #FFA500;
+    text-align: center;
+    padding: 10px 10px 0px 5px;
+    border-radius: 0px 20px 20px 0px;
+
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    animation: pulse-promo 0.5s infinite;
+}
+
+a.btn-promo{
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+    font-weight: bold;
+    line-height: 1;
+}
+
+.btn:hover{
     color: white;
     font-size: 22px;
     background: #22a248;
 }
 
-.pulse {
-    border-radius: 20px;
+.btn {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    border-radius: 0px;
     margin: 0 auto;
-    margin-bottom: 50px;
     text-align: center;
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 20px;
-    width: 50%;
+    padding: 10px;
+    width: 100%;
     height: 50%;
     font-size: 20px;
 
@@ -68,6 +110,17 @@ a i{
     cursor: pointer;
     box-shadow: 0 0 0 rgba(44, 204, 63, 0.4);
     animation: pulse 0.5s infinite;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+
+    background-color: #2d2d2e;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
 }
 
 @-webkit-keyframes pulse {
@@ -86,6 +139,33 @@ a i{
     0% {
         -moz-box-shadow: 0 0 0 0 rgba(44, 204, 76, 0.4);
         box-shadow: 0 0 0 0 rgba(44, 204, 81, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+}
+
+@-webkit-keyframes pulse-promo {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(85, 35, 19, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+}
+
+@keyframes pulse-promo {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 68, 44, 0.4);
+        box-shadow: 0 0 0 0 rgba(204, 47, 44, 0.4);
     }
     70% {
         -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
