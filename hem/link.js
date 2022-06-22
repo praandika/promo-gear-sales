@@ -71,7 +71,7 @@ if (pathName == '/doni/') {
     //         <h4>Jl. Teuku Umar Barat No. 100x (Malboro) Denpasar - Bali</h4>
     //     </center>
     // `)
-    let button = document.write(`<a href="https://yamahabismagroup.com/our-sales" class="btn" id="wa"><i class="fa-brands fa-whatsapp"></i> Klaim Promo Sekarang</a>`);
+    let button = document.write(`<a href="https://yamahabismagroup.com/pilih-dealer/" class="btn" id="wa"><i class="fa-brands fa-whatsapp"></i> Klaim Promo Sekarang</a>`);
     
     // document.getElementById("dealer").appendChild(dealerDetail)
     document.getElementById("wa").appendChild(button)
